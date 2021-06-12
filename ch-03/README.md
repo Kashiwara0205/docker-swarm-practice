@@ -21,8 +21,9 @@ services:
   redis:
     image: redis:alpine
 ```
-DockerfileからRUN pip install -r requirements.txtを消しました(わざと不具合を発生させます)
-version1.0では、この状態でデプロイしたいと思います
+DockerfileからRUN pip install -r requirements.txtを消しました  
+(わざと不具合を発生させます)  
+version1.0では、この状態でデプロイしたいと思います  
 
 Dockerfile
 ```
@@ -43,6 +44,8 @@ docker imagesで確認してみます
 TAGに1.0がついていることが確認できます
 
 ```
+docker images
+
 REPOSITORY                   TAG          IMAGE ID       CREATED              SIZE
 127.0.0.1:5000/stackdemo     1.0          fe457d32690b   7 seconds ago   72.9MB
 ```
@@ -101,8 +104,11 @@ docker imagesで確認してみます
 TAGに1.1がついていることが確認できます
 
 ```
+docker images
+
 REPOSITORY                   TAG          IMAGE ID       CREATED              SIZE
 127.0.0.1:5000/stackdemo     1.1          fe457d32690b   7 seconds ago   72.9MB
+127.0.0.1:5000/stackdemo     1.0          fe457d32690b   7 seconds ago   72.9MB
 ```
 
 1.1をデプロイしましょう
