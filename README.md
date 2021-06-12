@@ -7,7 +7,7 @@
 ２回デプロイしてレスポンスの内容を更新させるところまで実施します。
 
 ## swarmの作成
-Dockerのコンテナーオーケストレーションツールであるswarmを使います。
+Dockerのコンテナーオーケストレーションツールswarmを使います。
 
 ```
 docker swarm init --advertise-addr {IPアドレス}
