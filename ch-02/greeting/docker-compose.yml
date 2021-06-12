@@ -1,0 +1,8 @@
+version: "3.0"
+
+services:
+  web:
+    image: 127.0.0.1:5000/greeting
+    build: .
+    ports:
+      - "7999:7999"

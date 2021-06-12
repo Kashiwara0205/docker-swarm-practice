@@ -1,4 +1,4 @@
-# docker-swarm-practice　　
+# 1st docker-swarm-practice
 
 以下の手順をより詳細に知りたい場合は、参考URLを参照  
 参考URL：https://docs.docker.com/engine/swarm/stack-deploy/
@@ -95,7 +95,9 @@ Hello World! I have been seen 1 times.
 ```
  ## デプロイ（2回目）
  2回目のデプロイを実行して内容を更新してみます。  
-   
+ ビルド内容が変わらないのでdocker-buildとdocker-pushする意味はないのですが、普段CDでやってる作業を意識するためにやります。  
+  
+ せっかくなので、app.pyを修正します。
  app.pyの内容を以下のように変更しました（挨拶を消しました）。  
  
  ```
