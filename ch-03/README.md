@@ -159,7 +159,7 @@ services:
     image: redis:alpine
 ```
 
-buildやpushはいりません。1.0に関しては、もう実施したので。
+buildやpushはいりません。1.0と1.1に関してはregistoryにあります。
 デプロイします。
 
 ```
@@ -193,11 +193,13 @@ services:
 ```
 
 docker-compose.ymlを書き換えたら急いでデプロイします
+
 ```
 sudo docker stack deploy --compose-file docker-compose.yml stackdemo
-``
+```
 
 curlを叩いて直ったかどうか確認してみます。
+
 ```
 curl http://{IPアドレス}:8000
 Hello World! I have been seen 2 times.
