@@ -1,4 +1,4 @@
-# 1st docker-swarm-practice
+# ch-01 docker-swarm-practice
 
 以下の手順をより詳細に知りたい場合は、参考URLを参照  
 参考URL：https://docs.docker.com/engine/swarm/stack-deploy/
